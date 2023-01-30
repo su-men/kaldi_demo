@@ -1,4 +1,8 @@
-##### ps: 由于笔记本配置不满足cvte模型运行的最低要求，暂时搁置这一部分工作。
+##### ps: 由于笔记本配置不满足cvte模型运行的最低要求，暂时搁置这一部分工作
+
+#####       目前完成kaldiwindows平台的编译，compute-mfcc-feat项目改造，测试
+
+##### 	  online2-wav-nnet3-latgen-faster 改造运行cvte模型。
 
 
 
@@ -8,11 +12,17 @@
 * 注意最新的5.4版本添加了portaudio的集成，需要下载配置portaudio库，不想折腾的话直接拉取5.3的分支。
 * 按官方步骤配置 openfst 、openBLAS、cmake、git  程序运行时还需要mingw64.dll 
 
-![image-20230130143436720](E:\project_cpp\kaldi_test\resource\png\1.png)
+![image-20230130143436720](./resource/png/1.png)
 
-* 编译完成之后，创建自己的项目，把kaldi的相关依赖引进项目即可
+* 编译完成之后，创建自己的项目
 
-![image-20230130144254357](C:\Users\52903\AppData\Roaming\Typora\typora-user-images\image-20230130144254357.png)
+  kaldi的相关依赖
+
+  kaldi/src
+
+  kaldi/windows下的三个配置文件
+
+![image-20230130144254357](./resource/png/2.png)
 
 
 
@@ -22,7 +32,7 @@
 
 * cvte文件结构
 
-![img](https://img2018.cnblogs.com/i-beta/1343081/202001/1343081-20200114150020628-1069743279.png)
+![img](./resource/png/3.png)
 
 
 
