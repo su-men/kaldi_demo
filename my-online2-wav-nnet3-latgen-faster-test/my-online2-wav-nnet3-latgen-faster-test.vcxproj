@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C458D9B6-6B2E-4BD2-9698-9709C63BA526}</ProjectGuid>
+    <RootNamespace>myonline2wavnnet3latgenfastertest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\kaldi_build\kaldi-5.3\windows\kaldiwin.props" />
+    <Import Project="..\..\kaldi_build\kaldi-5.3\windows\openfstwin_debug.props" />
+    <Import Project="..\..\kaldi_build\kaldi-5.3\windows\variables.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\project_cpp\kaldi_build\kaldi-5.3\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="online2_wav_nnet3_latgen_faster_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-base\kaldi-base.vcxproj">
+      <Project>{1b3a8c48-4db3-4c19-bef0-39c7e4401ce4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-chain\kaldi-chain.vcxproj">
+      <Project>{186b3017-5cb1-4108-9de0-33282c95a215}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-cudamatrix\kaldi-cudamatrix.vcxproj">
+      <Project>{e68ce94c-9e19-4734-b6e4-ecd95c2f9de4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-decoder\kaldi-decoder.vcxproj">
+      <Project>{d4d6e416-7d8d-427b-8f25-5a3d812561c3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-feat\kaldi-feat.vcxproj">
+      <Project>{3f21c019-f693-418f-b820-3d715bf0bbb9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-fstext\kaldi-fstext.vcxproj">
+      <Project>{0ad2521d-a388-48cf-831d-6bc8c9119a28}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-gmm\kaldi-gmm.vcxproj">
+      <Project>{e5b6a6d2-b6cd-48d7-9db4-15f3cee8a4b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-hmm\kaldi-hmm.vcxproj">
+      <Project>{fd745b00-4a52-4620-a56a-e244b10c4a2e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-ivector\kaldi-ivector.vcxproj">
+      <Project>{15ca2fcd-dadc-425c-8e99-9d1a69867084}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-lat\kaldi-lat.vcxproj">
+      <Project>{533c5297-4ff6-4bc5-8bb3-fa31a4f26b07}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-matrix\kaldi-matrix.vcxproj">
+      <Project>{79b7283e-e1b2-48f7-8bdd-b1cf9b31afb6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-nnet2\kaldi-nnet2.vcxproj">
+      <Project>{1b7f400f-902e-4d49-bcc1-66ecdc05133e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-nnet3\kaldi-nnet3.vcxproj">
+      <Project>{b69884fd-4f15-495a-b9f1-6d7086302aa2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-online2\kaldi-online2.vcxproj">
+      <Project>{54b5bcaf-5ebc-49ef-8b27-1c8473bb0d08}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-transform\kaldi-transform.vcxproj">
+      <Project>{865f7dc4-02cd-4d8a-8572-dc049a0787e8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-tree\kaldi-tree.vcxproj">
+      <Project>{101acdfc-65d6-4277-bb78-06dee21922d1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\kaldi_build\kaldi-5.3\kaldiwin_vs2017_OPENBLAS\kaldiwin\kaldi-util\kaldi-util.vcxproj">
+      <Project>{7dcbdad5-384d-409e-a402-cc9f675a4b4b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kaldi_test\kaldi_test.vcxproj">
+      <Project>{bc8212dc-bc3e-46a5-af33-8ab8cfd9c8b4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
